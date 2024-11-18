@@ -1,3 +1,0 @@
-C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/loop4_Soal4/cmake-build-debug/CMakeFiles/loop4_Soal4.dir
-C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/loop4_Soal4/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/loop4_Soal4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
