@@ -1,0 +1,3 @@
+C:/Users/Pc/Documents/C++_CLionProject/Latihan/BilanganGanjilForLoop/cmake-build-debug/CMakeFiles/LoopingGanjilGenap.dir
+C:/Users/Pc/Documents/C++_CLionProject/Latihan/BilanganGanjilForLoop/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Pc/Documents/C++_CLionProject/Latihan/BilanganGanjilForLoop/cmake-build-debug/CMakeFiles/rebuild_cache.dir
