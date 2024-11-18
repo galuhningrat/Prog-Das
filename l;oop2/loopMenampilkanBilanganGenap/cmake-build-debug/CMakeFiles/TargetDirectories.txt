@@ -1,3 +1,0 @@
-C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/loopMenampilkanBilanganGenap/cmake-build-debug/CMakeFiles/loopMenampilkanBilanganGenap.dir
-C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/loopMenampilkanBilanganGenap/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/loopMenampilkanBilanganGenap/cmake-build-debug/CMakeFiles/rebuild_cache.dir
