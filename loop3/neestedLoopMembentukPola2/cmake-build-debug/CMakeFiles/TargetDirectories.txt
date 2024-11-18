@@ -1,0 +1,3 @@
+C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/neestedLoopMembentukPola2/cmake-build-debug/CMakeFiles/neestedLoopMembentukPola2.dir
+C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/neestedLoopMembentukPola2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Pc/Documents/C++_CLionProject/Exercice/PakSiswo/neestedLoopMembentukPola2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
