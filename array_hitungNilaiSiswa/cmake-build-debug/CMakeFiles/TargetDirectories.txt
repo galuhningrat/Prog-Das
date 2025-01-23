@@ -1,0 +1,3 @@
+C:/Users/ASUS/CLionProjects/exam/hitungNilaiSiswa/cmake-build-debug/CMakeFiles/hitungNilaiSiswa.dir
+C:/Users/ASUS/CLionProjects/exam/hitungNilaiSiswa/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ASUS/CLionProjects/exam/hitungNilaiSiswa/cmake-build-debug/CMakeFiles/rebuild_cache.dir
