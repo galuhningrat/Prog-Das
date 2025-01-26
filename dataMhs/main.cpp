@@ -15,12 +15,12 @@ void inputData() {
     std::cout << "=================================\n";
 
     for (int i = 0; i < jmlMhs; i++) {
-        std::cout << "\nData Mahasiswa ke- " << (i + 1) << "\n";
-        std::cout << "Nama            : ";
+        std::cout << "\nData Mahasiswa ke-" << (i + 1) << "\n";
+        std::cout << "Nama            :";
         std::cin >> namaMhs[i];
-        std::cout << "Nilai Bahasa    : ";
+        std::cout << "Nilai Bahasa    :";
         std::cin >> nilaiBahasa[i];
-        std::cout << "Nilai Mtk       : ";
+        std::cout << "Nilai Mtk       :";
         std::cin >> nilaiMtk[i];
     }
 
@@ -31,7 +31,6 @@ void inputData() {
      * Masukan = masuk + an = kata benda; Masukkan = masuk + kan = kata kerja */
     int back;
     while (true) {
-        std::cout << "Pilih: ";
         std::cin >> back;
         if (back == 9) return;
         else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -40,7 +39,7 @@ void inputData() {
 
 void outputData() {
     std::cout << "\n=================================\n";
-    std::cout << "========= DATA NILAI MHS =========\n";
+    std::cout << "========= DATA NILAI MHS ========\n";
     std::cout << "=================================\n";
 
     if (!dataTerisi) {
@@ -48,7 +47,6 @@ void outputData() {
         std::cout << "Masukkan 9 untuk kembali\n";
         int back;
         while (true) {
-            std::cout << "Pilih: ";
             std::cin >> back;
             if (back == 9) return;
             else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -59,10 +57,9 @@ void outputData() {
                       << ", Nilai Bahasa: " << nilaiBahasa[i]
                       << ", Nilai MTK: " << nilaiMtk[i] << "\n";
         }
-        std::cout << "Masukkan 9 untuk kembali\n";
+        std::cout << "\nMasukkan 9 untuk kembali\n";
         int back;
         while (true) {
-            std::cout << "Pilih: ";
             std::cin >> back;
             if (back == 9) return;
             else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -77,7 +74,7 @@ void editNilaiMahasiswa() {
 
     if (!dataTerisi) {
         std::string cariNamaMhs;
-        std::cout << "Masukan nama mahasiswa yang akan di edit:\n";
+        std::cout << "Masukkan nama mahasiswa yang akan di edit:\n";
         std::cin >> cariNamaMhs;
 
         std::cout << "\nMahasiswa dengan nama " << cariNamaMhs << " tidak ditemukan!\n\n";
@@ -85,7 +82,6 @@ void editNilaiMahasiswa() {
 
         int back;
         while (true) {
-            std::cout << "Pilih: ";
             std::cin >> back;
             if (back == 9) return;
             else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -93,25 +89,24 @@ void editNilaiMahasiswa() {
     }
 
     std::string cariNamaMhs;
-    std::cout << "Masukan nama mahasiswa yang akan di edit: ";
+    std::cout << "Masukkan nama mahasiswa yang akan di edit:\n";
     std::cin >> cariNamaMhs;
 
     bool found = false;
     for (int i = 0; i < jmlMhs; i++) {
         if (namaMhs[i] == cariNamaMhs) {
-            std::cout << "Data Mahasiswa ke- " << i+1 << "\n";
-            std::cout << "Nama            : " << namaMhs[i] << "\n";
-            std::cout << "Edit Nilai Bahasa       : ";
+            std::cout << "\nData Mahasiswa ke-" << i+1 << "\n";
+            std::cout << "Nama                  :" << namaMhs[i] << "\n";
+            std::cout << "Edit Nilai Bahasa     :";
             std::cin >> nilaiBahasa[i];
-            std::cout << "Edit Nilai Mtk          : ";
+            std::cout << "Edit Nilai Mtk        :";
             std::cin >> nilaiMtk[i];
-            std::cout << "Berhasil disimpan!\n";
+            std::cout << "\nBerhasil disimpan!\n\n";
             found = true;
 
             std::cout << "Masukkan 9 untuk kembali\n";
             int back;
             while (true) {
-                std::cout << "Pilih: ";
                 std::cin >> back;
                 if (back == 9) return;
                 else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -125,7 +120,6 @@ void editNilaiMahasiswa() {
         std::cout << "Masukkan 9 untuk kembali\n";
         int back;
         while (true) {
-            std::cout << "Pilih: ";
             std::cin >> back;
             if (back == 9) return;
             else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -133,36 +127,27 @@ void editNilaiMahasiswa() {
     }
 }
 
-void menghitungRataRata() {
+void menghitungRataRata(const std::string& cariNamaMhs) {
     std::cout << "\n=================================\n";
     std::cout << "====== RATA-RATA NILAI MHS ======\n";
     std::cout << "=================================\n";
 
     if (!dataTerisi) {
-        std::string cariNamaMhs;
-        std::cout << "Masukan nama mahasiswa yang akan ditampilkan rata-ratanya:\n";
-        std::cin >> cariNamaMhs;
-
         std::cout << "\nMahasiswa dengan nama " << cariNamaMhs << " tidak ditemukan!\n\n";
         std::cout << "Masukkan 9 untuk kembali\n";
 
         int back;
         while (true) {
-            std::cout << "Pilih: ";
             std::cin >> back;
             if (back == 9) return;
             else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
         }
     }
 
-    std::string cariNamaMhs;
-    std::cout << "Masukan nama mahasiswa yang akan ditampilkan rata-ratanya: ";
-    std::cin >> cariNamaMhs;
-
     bool found = false;
     for (int i = 0; i < jmlMhs; i++) {
         if (namaMhs[i] == cariNamaMhs) {
-            std::cout << "Data Mahasiswa ke- " << i+1 << "\n";
+            std::cout << "\nData Mahasiswa ke-" << i+1 << "\n";
             std::cout << "Nama            : " << namaMhs[i] << "\n";
             std::cout << "Nilai Bahasa    : " << nilaiBahasa[i] << "\n";
             std::cout << "Nilai Mtk       : " << nilaiMtk[i] << "\n";
@@ -170,10 +155,9 @@ void menghitungRataRata() {
             std::cout << "Rata-rata       : " << rataRata << "\n";
             found = true;
 
-            std::cout << "Masukkan 9 untuk kembali\n";
+            std::cout << "\nMasukkan 9 untuk kembali\n";
             int back;
             while (true) {
-                std::cout << "Pilih: ";
                 std::cin >> back;
                 if (back == 9) return;
                 else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -187,7 +171,6 @@ void menghitungRataRata() {
         std::cout << "Masukkan 9 untuk kembali\n";
         int back;
         while (true) {
-            std::cout << "Pilih: ";
             std::cin >> back;
             if (back == 9) return;
             else std::cout << "Invalid input. Oh come on, you haven't even stepped foot on the grass, Dude.\n";
@@ -205,8 +188,8 @@ int main() {
         std::cout << "2) Edit Semua Data Mahasiswa\n";
         std::cout << "3) Edit Nilai Mahasiswa Berdasarkan Nama\n";
         std::cout << "4) Tampilkan Rata-rata Nilai\n";
-        std::cout << "9) Exit\n";
-        std::cout << "Pilih Nomor: ";
+        std::cout << "9) Exit\n\n";
+        std::cout << "Pilih Nomor:";
         std::cin >> option;
 
         switch (option) {
@@ -219,8 +202,12 @@ int main() {
             case 3:
                 editNilaiMahasiswa();
             break;
-            case 4:
-                menghitungRataRata();
+            case 4: {
+                std::string cariNamaMhs;
+                std::cout << "Masukkan nama mahasiswa yang akan ditampilkan rata-ratanya:\n";
+                std::cin >> cariNamaMhs;
+                menghitungRataRata(cariNamaMhs);
+            }
             break;
             case 9:
                 exit(0);
