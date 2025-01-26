@@ -77,11 +77,10 @@ void editNilaiMahasiswa() {
 
     if (!dataTerisi) {
         std::string cariNamaMhs;
-        std::cout << "Masukan nama mahasiswa yang akan di edit: ";
+        std::cout << "Masukan nama mahasiswa yang akan di edit:\n";
         std::cin >> cariNamaMhs;
 
-        std::cout << "\n" << cariNamaMhs << "\n";
-        std::cout << "Mahasiswa dengan nama " << cariNamaMhs << " tidak ditemukan!\n\n";
+        std::cout << "\nMahasiswa dengan nama " << cariNamaMhs << " tidak ditemukan!\n\n";
         std::cout << "Masukkan 9 untuk kembali\n";
 
         int back;
@@ -141,11 +140,10 @@ void menghitungRataRata() {
 
     if (!dataTerisi) {
         std::string cariNamaMhs;
-        std::cout << "Masukan nama mahasiswa yang akan ditampilkan rata-ratanya: ";
+        std::cout << "Masukan nama mahasiswa yang akan ditampilkan rata-ratanya:\n";
         std::cin >> cariNamaMhs;
 
-        std::cout << "\n" << cariNamaMhs << "\n\n";
-        std::cout << "Mahasiswa dengan nama " << cariNamaMhs << " tidak ditemukan!\n\n";
+        std::cout << "\nMahasiswa dengan nama " << cariNamaMhs << " tidak ditemukan!\n\n";
         std::cout << "Masukkan 9 untuk kembali\n";
 
         int back;
